@@ -1,0 +1,605 @@
+/*@font-face {
+	font-style: 'Roboto', sans-serif;
+	src: url('/fonts/roboto/Roboto-Black.ttf');
+	src: url('/fonts/roboto/Roboto-BlackItalic.ttf');
+	src: url('/fonts/roboto/Roboto-Bold.ttf');
+	src: url('/fonts/roboto/Roboto-BoldCondensed.ttf');
+	src: url('/fonts/roboto/Roboto-BoldCondensedItalic.ttf');
+	src: url('/fonts/roboto/Roboto-Condensed.ttf');
+	src: url('/fonts/roboto/Roboto-CondensedItalic.ttf');
+	src: url('/fonts/roboto/Roboto-Italic.ttf');
+	src: url('/fonts/roboto/Roboto-Light.ttf');
+	src: url('/fonts/roboto/Roboto-LightItalic.ttf');
+	src: url('/fonts/roboto/Roboto-MediumItalic.ttf');
+	src: url('/fonts/roboto/Roboto-Regular.ttf');
+	src: url('/fonts/roboto/Roboto-Regular.ttf') format('ttf');
+	src: url('/fonts/roboto/Roboto-Regular.ttf') format('truetype');
+	src: url('/fonts/roboto/Roboto-Thin.ttf');
+	src: url('/fonts/roboto/Roboto-ThinItalic.ttf');
+}*/
+
+@font-face {
+	font-family: 'RobotoCondensed-Regular',sans-serif;
+	src: url('../jadi/fonts/roboto/RobotoCondensed-Regular.ttf');
+	src: url('../jadi/fonts/roboto/RobotoCondensed-Regular.ttf') format('ttf'),
+	     url('../jadi/fonts/roboto/RobotoCondensed-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Metropolis-Regular';
+	src: url('../jadi/fonts/metropolis/Metropolis-Regular.otf');
+	src: url('../jadi/fonts/metropolis/Metropolis-Regular.otf') format('otf'),
+	     url('../jadi/fonts/metropolis/Metropolis-Regular.otf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Nunito-Regular';
+	src: url('../jadi/fonts/nunito/Nunito-Regular.ttf');
+	src: url('../jadi/fonts/nunito/Nunito-Regular.ttf') format('ttf'),
+	     url('../jadi/fonts/nunito/Nunito-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Raleway-Regular',sans-serif;
+	src: url('../jadi/fonts/raleway/Raleway-Regular.ttf');
+	src: url('../jadi/fonts/raleway/Raleway-Regular.ttf') format('ttf'),
+	     url('../jadi/fonts/raleway/Raleway-Regular.ttf') format('truetype');
+}
+
+
+.title-produk{
+	width: 90%;
+	height: 50px;
+	font-size: 35px;
+	text-align:	left;
+	text-transform: uppercase;	
+	font-family: 'RobotoCondensed-Regular',sans-serif;
+	margin-bottom: 10px;
+	margin-top: 55px;
+}
+
+.title-produk-keterangan{
+	margin-left:2px;
+	margin-top: -10px;
+	font-size: 9px;
+	width: 200px; 
+	height: 20px;
+}
+
+.isi-produk{
+	width: 900px;
+}
+
+.kotak-produk1, .kotak-produk2, .kotak-produk3, .kotak-produk4, .kotak-produk5, .kotak-produk6{
+	opacity: 0;
+	width: 900px;
+	margin-bottom: 40px;
+	display: table;
+	margin-top: 7%;
+	padding-bottom: 4%;
+	border-bottom: solid 1px #f2f2f2;
+	transition: all 0.8s linear;
+}
+
+
+.kotak-produk1.keatas, .kotak-produk2.keatas, .kotak-produk3.keatas, .kotak-produk4.keatas, .kotak-produk5.keatas, .kotak-produk6.keatas{
+	opacity: 1;
+	width: 900px;
+	margin-bottom: 40px;
+	display: table;
+	margin-top: 0%;
+	padding-bottom: 4%;
+}
+
+
+.produk-logo-kiri{
+	float: left;
+	width: 160px;
+	height: 100px;
+	text-align: center;
+	font-size: 15px;
+
+}
+
+.produk-logo-kanan{
+	float: right;
+	width: 130px;
+	height: 100px;
+	text-align: center;
+	font-size: 15px;
+}
+
+.deskripsi-kanan{
+	display: table;
+	float: right;
+	width: 700px;
+	height: 85px;
+	margin-top: 15px;
+	text-align: justify;
+  	text-justify: inter-word;
+	font-family: 'Metropolis-Regular', sans-serif;
+	letter-spacing: 0.05em;
+}
+
+.deskripsi-kiri{
+	display: table;
+	float: left;
+	width: 700px;
+	height: 85px;
+	margin-top: 15px;
+	text-align: justify;
+    text-justify: inter-word;
+	font-family: 'Metropolis-Regular', sans-serif;
+	letter-spacing: 0.05em;
+}
+
+.logo-A{
+	width: 130px;
+	height: 80px;
+	margin-top: 10px;
+}
+
+.logo-B{
+	width: 130px;
+	height: 80px;
+	margin-top: 10px;
+}
+
+/*UNTUK BAGIAN WHERE WE DO*/
+.title-wwd{
+	width: 90%;
+	height: 50px;
+	font: sans-serif;
+	font-size: 35px;
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'RobotoCondensed-Regular';
+	margin-bottom: 10px;
+	margin-top: 170px;
+}
+
+.isi-wwd{
+	height: 450px;
+	
+	}
+
+/*untuk yang PT.*/
+.collapsible {
+	background-color: #777;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 90%;
+	border: none;
+	font-family: "Nunito-Regular";
+	font-weight: bold;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+}
+
+.active, .collapsible:hover {
+	background-color: #555;
+}
+
+.collapsible:after {
+	content: '\002B';
+	color: white;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+
+.active:after {
+	content: "\2212";
+}
+
+.content-wwd {
+	padding: 10px;
+	/*max-height: auto;*/
+	width: 90%;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	background-color: #f1f1f1;
+	font-family: 'Metropolis-Regular', sans-serif;
+}
+
+.besar-sekali{
+	max-height: 600px; 
+	overflow: auto; 
+	background-color: none; 
+	width: 980px;
+	scroll-behavior: smooth;  /*Javascroll error karena ini*/
+	overflow-x: hidden;
+	overflow-y: scroll;
+	position: relative;
+	margin-top: -30px;
+	scrollbar-width: none;
+	-ms-overflow-style: none; /*Iternet Explorer*/
+	-moz-overflow-style: none; /*Mozila*/
+}
+
+.besar-sekali::-webkit-scrollbar{
+	display: none;
+}
+
+.sedang-sekali{
+	margin-left: 60px;
+	margin-bottom: 150px;
+}
+
+.scroll-atas{
+	position: fixed; left: 34%; top: 20%; padding-right: -100px; box-shadow: none; background: none; border: none; z-index: 1000;
+}
+
+.scroll-bawah{
+	position: fixed; left: 34%; top: 93%; box-shadow: none; background: none; border: none; z-index: 1000;
+}
+
+.scroll-atas span, .scroll-bawah span{
+	font-size: 0px; 
+	color: red;
+}
+
+.panah-atas{
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;  /* left arrow slant */
+	border-right: 10px solid transparent; /* right arrow slant */
+	border-bottom: 10px solid red; /* bottom, add background color here */
+	font-size: 0;
+	line-height: 0;
+}
+
+.panah-bawah{
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid red;
+	font-size: 0;
+	line-height: 0;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    .besar-sekali{
+		max-height: 650px; 
+		overflow: auto;
+		overflow-x: hidden; 
+		background-color: none;
+		width: 137%;
+	}
+
+	.sedang-sekali{
+		margin-left: 33%;
+	}
+
+	.title-produk{
+		height: 50px;
+		font-size: 35px;
+		text-align:	left;
+		text-transform: uppercase;
+		font-family: 'RobotoCondensed-Regular',sans-serif;
+		margin-left: -47px;
+		margin-bottom: 10px;
+		margin-top: 55px;
+	}
+
+	.title-wwd{
+		width: 150px;
+		height: 150px;
+		font: sans-serif;
+		font-size: 35px;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-family: 'RobotoCondensed-Regular';
+		margin-left: -35px;
+		margin-bottom: 10px;
+		margin-top: 170px;
+	}
+
+	.isi-produk{
+		width: 100%;
+		font-size: 11.4px;
+	}
+
+	.produk-logo-kiri{
+		display: table;
+		width: 90%;
+		text-align: center;
+		font-size: 15px;
+	}
+
+	.produk-logo-kanan{
+		display: table;
+		width: 90%;
+		text-align: center;
+		font-size: 15px;
+	}
+
+	.logo-A{
+		width: 130px;
+		height: 80px;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	.logo-B{
+		width: 130px;
+		height: 80px;
+		margin-top: 10px;
+	}
+
+	.kotak-produk1,.kotak-produk2,.kotak-produk3,.kotak-produk4,.kotak-produk5,.kotak-produk6{
+		width: 100px;
+		display: table;
+		margin-bottom: 40px;
+		margin-left: -35px;
+	}
+
+	.kotak-produk1.keatas, .kotak-produk2.keatas, .kotak-produk3.keatas, .kotak-produk4.keatas, .kotak-produk5.keatas, .kotak-produk6.keatas{
+		opacity: 1;
+		width: 100px;
+		display: table;
+		margin-bottom: 40px;
+		margin-left: -35px;
+	}
+
+	.deskripsi-kanan{
+		display: table;
+		float: right;
+		width: 150px;
+		height: 85px;
+		margin-top: 15px;
+		margin-right: 20px;
+		text-indent: 30px;
+		font-family: "Roboto-BlackItalic", sans-serif;
+		letter-spacing: 0.05em;
+		padding-bottom: 10px;
+	}
+
+	.deskripsi-kiri{
+		display: table;
+		float: right;
+		width: 150px;
+		height: 85px;
+		margin-top: 15px;
+		margin-right: -14px;
+		text-indent: 30px;
+		font-family: "Roboto-BlackItalic", sans-serif;
+		letter-spacing: 0.05em;
+		padding-bottom: 10px;
+	}
+
+	#myGroup{
+		width: 123%;
+		margin-left: -30%;
+	}
+
+	.logo-A-wwd{
+		width: 130px;
+		height: 80px;
+		margin-top: 10px;	
+	}
+
+	.scroll-atas{
+		position: fixed; 
+		left: 45%; 
+		top: 17%; 
+		padding-right: -100px;
+		box-shadow: none; 
+		background: none; 
+		border: none; 
+		z-index: 1000;
+	}
+
+	.scroll-bawah{
+		position: fixed; 
+		left: 45%; 
+		bottom: 40px;
+		box-shadow: none; 
+		background: none; 
+		border: none; 
+		z-index: 1000;
+	}
+}
+
+@media only screen and (min-width: 401px) and (max-width: 961px) {
+    .besar-sekali{
+		max-height: 650px; 
+		overflow: auto;
+		overflow-x: hidden; 
+		background-color: none;
+		width: 140%;
+		margin-left: -10%;
+	}
+
+	.isi-produk{
+		width: 100%;
+		font-size: 13px;
+	}
+
+	.kotak-produk1,.kotak-produk2,.kotak-produk3,.kotak-produk4,.kotak-produk5,.kotak-produk6{
+		width: 100%;
+		margin-bottom: 40px;
+		padding-bottom: 20px;
+	}
+
+	.kotak-produk1.keatas, .kotak-produk2.keatas, .kotak-produk3.keatas, .kotak-produk4.keatas, .kotak-produk5.keatas, .kotak-produk6.keatas{
+		width: 100%;
+		display: table;
+		opacity: 1;
+		margin-bottom: 40px;
+		padding-bottom: 20px;
+	}
+
+	.logo-A{
+		position: relative;
+		width: 130px;
+		height: 80px;
+		margin-top: 10px;
+	}
+
+	.logo-B{
+		position: relative;
+		width: 130px;
+		height: 80px;
+		margin-top: 10px;
+	}
+
+	.produk-logo-kiri{
+		display: table;
+		width: 90%;
+		text-align: center;
+		font-size: 15px;
+	}
+
+	.produk-logo-kanan{
+		display: table;
+		width: 115%;
+		text-align: center;
+		font-size: 15px;
+
+	}
+
+	.deskripsi-kanan{
+		position: relative;
+		display: table;	
+		float: left;
+		clear: left;
+		width: 90%;
+		margin-top: 15px;
+		margin-right: 36px;
+		text-indent: 30px;
+		font-family: "Roboto-BlackItalic", sans-serif;
+		letter-spacing: 0.05em;
+	}
+
+	.deskripsi-kiri{
+		position: relative;
+		display: table;
+		float: left;
+		clear: left;
+		width: 90%;
+		margin-top: 15px;
+		margin-right: 36px;
+		text-indent: 30px;
+		font-family: "Roboto-BlackItalic", sans-serif;
+		letter-spacing: 0.05em;
+	}
+
+	.logo-A-wwd{
+		width: 200px;
+		height: 120px;
+		margin-top: 10px;
+		
+	}
+
+	.scroll-atas{
+		position: fixed; 
+		left: 50%; 
+		top: 102px; 
+		padding-right: -100px; 
+		box-shadow: none; 
+		background: none; 
+		border: none;
+	}
+
+	.scroll-bawah{
+		position: fixed; 
+		left: 50%; 
+		bottom: 0px; 
+		box-shadow: none; 
+		background: none; 
+		border: none;
+	}
+}
+
+/* desktop grid */
+@media screen and (min-width: 961px) and (max-width: 1380px){
+    .besar-sekali{
+		max-height: 650px; 
+		overflow: auto; 
+		overflow-x: hidden;
+		background-color: none;
+		width: 88%;
+	}
+
+	.isi-produk{
+		width: 100%;
+	}
+
+	.kotak-produk1,.kotak-produk2,.kotak-produk3,.kotak-produk4,.kotak-produk5,.kotak-produk6{
+		width: 100%;
+		margin-bottom: 40px;
+		padding-bottom: 20px;
+		margin-top: 7%;
+		transition: all 0.8s linear;
+	}
+
+	.kotak-produk1.keatas, .kotak-produk2.keatas, .kotak-produk3.keatas, .kotak-produk4.keatas, .kotak-produk5.keatas, .kotak-produk6.keatas{
+		width: 100%;
+		display: table;
+		opacity: 1;
+		margin-bottom: 40px;
+		padding-bottom: 20px;
+		margin-top: 0%;
+	}
+
+	.produk-logo-kiri{
+		float: left;
+		width: 160px;
+		height: 100px;
+		text-align: center;
+		font-size: 15px;
+		margin-top: 2%;
+	}
+
+	.produk-logo-kanan{
+		float: right;
+		width: 130px;
+		height: 100px;
+		text-align: center;
+		font-size: 15px;
+		margin-top: 2%;
+	}
+
+	.deskripsi-kanan{
+		display: table;
+		float: left;
+		width: 65%;
+		margin-top: 15px;
+		margin-left: 10px;
+		text-align: justify;
+	  	text-justify: inter-word;
+		font-family: 'Metropolis-Regular', sans-serif;
+		letter-spacing: 0.05em;
+	}
+
+	.deskripsi-kiri{
+		display: table;
+		float: left;
+		width: 65%;
+		margin-top: 15px;
+		text-align: justify;
+	    text-justify: inter-word;
+		font-family: 'Metropolis-Regular', sans-serif;
+		letter-spacing: 0.05em;
+	}
+
+	.logo-A{
+		width: 130px;
+		height: 80px;
+		margin-top: 10px;
+	}
+
+	.logo-B{
+		width: 130px;
+		height: 80px;
+		margin-top: 10px;
+	}
+}
+

@@ -1,0 +1,50 @@
+.rotate-box {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 15px;
+  perspective: 400px;
+  height: 300px;
+}
+
+.rotate-box .rotate-box-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.rotate-box .rotate-box-body .rotate {
+  position: relative;
+  top: 25%;
+  font-family: cursive;
+  font-size: 50px;
+  color: #111;
+  text-shadow: 3px 4px #c1c1c1;
+  text-transform: uppercase;
+  font-weight: bold;
+  animation-name: rotate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  margin: 35px 0px;
+}
+
+@keyframes rotate {
+from { transform: rotateY(0deg); }
+to { transform: rotateY(-360deg); }
+}
+
+@-webkit-keyframes rotate {
+from { transform: rotateY(0deg); }
+to { transform: rotateY(-360deg); }
+}
+
+@-moz-keyframes rotate {
+from { transform: rotateY(0deg); }
+to { transform: rotateY(-360deg); }
+}

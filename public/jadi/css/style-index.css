@@ -1,0 +1,570 @@
+/* fonts */
+@font-face {
+	font-family: 'RobotoCondensed-Regular',sans-serif;
+	src: url('../jadi/fonts/roboto/RobotoCondensed-Regular.ttf');
+	src: url('../jadi/fonts/roboto/RobotoCondensed-Regular.ttf') format('ttf'),
+	     url('../jadi/fonts/roboto/RobotoCondensed-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'JosefinSans-Regular',sans-serif;
+	font-size: 17px;
+	src: url('../jadi/fonts/roboto/JosefinSans-Regular.ttf');
+	src: url('../jadi/fonts/roboto/JosefinSans-Regular.ttf') format('ttf'),
+	     url('../jadi/fonts/roboto/JosefinSans-Regular.ttf') format('truetype');
+}
+
+.margin-left-53{
+	margin-top: 10px;
+	float: right;
+}
+
+/*Vertical Sliding*/
+.slidingVertical{
+   display: inline;
+   text-indent: 9px;
+}
+.slidingVertical h3{
+   animation: leftToRight 15s linear infinite 0s;
+   -ms-animation: leftToRight 15s linear infinite 0s;
+   -webkit-animation: leftToRight 15s linear infinite 0s;
+   color: #111;
+   text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+   opacity: 0;
+   font-size:3rem;
+   margin-left: 5%;
+   overflow: hidden;
+   position: absolute;
+   color: red;
+}
+.slidingVertical h3:nth-child(1){
+   animation-delay: 2.5s;
+   -ms-animation-delay: 2.5s;
+   -webkit-animation-delay: 2.5s;
+   color:blue;
+}
+.slidingVertical h3:nth-child(2){
+   animation-delay: 5s;
+   -ms-animation-delay: 5s;
+   -webkit-animation-delay: 5s;
+   color: green;
+}
+.slidingVertical h3:nth-child(3){
+   animation-delay:7.5s;
+   -ms-animation-delay: 7.5s;
+   -webkit-animation-delay: 7.5s;
+   color: yellow;
+}
+.slidingVertical h3:nth-child(4){
+   animation-delay: 10s;
+   -ms-animation-delay: 10s;
+   -webkit-animation-delay: 10s;
+   color: black;
+}
+.slidingVertical h3:nth-child(5){
+	animation-delay: 12.5s;
+	-ms-animation-delay: 12.5s;
+	-webkit-animation-delay: 12.5s;
+}
+.slidingVertical h3:nth-child(6){
+	animation-delay: 15;
+	-ms-animation-delay: 15;
+	-webkit-animation-delay: 15;
+	color: yellow;
+}
+
+
+/*leftToRight Animation*/
+@-moz-keyframes leftToRight{
+	0% { opacity: 0; }
+	4% { opacity: 0; -moz-transform: translateX(-50px); }
+	8% { opacity: 1; -moz-transform: translateX(0px); }
+	16% { opacity: 1; -moz-transform: translateX(0px); }
+	20% { opacity: 0; -moz-transform: translateX(70px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-webkit-keyframes leftToRight{
+	0% { opacity: 0; }
+	4% { opacity: 0; -webkit-transform: translateX(-50px); }
+	8% { opacity: 1; -webkit-transform: translateX(0px); }
+	16% { opacity: 1; -webkit-transform: translateX(0px); }
+	20% { opacity: 0; -webkit-transform: translateX(70px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes leftToRight{
+	0% { opacity: 0; }
+	4% { opacity: 0; -ms-transform: translateX(-50px); }
+	8% { opacity: 1; -ms-transform: translateX(0px); }
+	16% { opacity: 1; -ms-transform: translateX(0px); }
+	20% { opacity: 0; -ms-transform: translateX(70px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+/*Untuk bagian hitam di awal*/
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #222222;
+    z-index: 1000;
+    -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(0);  /* IE 9 */
+    transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.logo{
+	position: fixed;
+	padding-bottom: 100px;
+	margin-right: 1000px;
+}
+
+.halo-title{
+	color : black;
+	font-size: 35px;
+	width: 60%;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	margin-left: 100px;
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'sailecbold', sans-serif;
+	text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+}
+
+.isi-desk {
+	min-height: 300px
+	max-height: 500px;
+	overflow: auto;
+	overflow-x: hidden;
+	margin-top: 120px;
+    background-color: none;
+	width: 100%;
+	margin-left: 7%;
+	scrollbar-width: none;
+        -ms-overflow-style: none; /*Iternet Explorer*/
+        -moz-overflow-style: none; /*Mozila*/
+        -o-overflow-style: none;
+}
+
+.isi-desk::-webkit-scrollbar{
+    display: none;
+}
+
+.home-deskripsi1{
+	font-family: Helvetica;
+	display: table;
+	color : black;
+	float: left;
+	margin-left: 2% ;
+	text-align: left;
+	width:260px;
+	height:300px;
+	font-size: 11px;
+	letter-spacing: 0.05em;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.home-deskripsi2{
+	font-family: Helvetica;
+	display: table;
+	color : black;
+	float: left;
+	margin-left: 2% ;
+	text-align: left;
+	width:260px;
+	height:300px;
+	padding-right: 20px;
+	font-size: 11px;
+	letter-spacing: 0.05em;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.home-deskripsi3{
+	font-family: Helvetica;
+	display: table;
+	color : black;
+	float: left;
+	margin-left: 2% ;
+	text-align: left;
+	width:260px;
+	height:300px;
+	font-size: 11px;
+	letter-spacing: 0.05em;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+/* desktop grid */
+@media screen and (max-width: 1300px){
+	.home-deskripsi1{
+		color : black;
+		width: 80%;
+		height: 180px;
+		margin-left: 2% ;
+		text-align: left;
+		font-size: 11.5px;
+		letter-spacing: 0.05em;
+		border-bottom: solid 1px #e0e0d1;
+		border-right: 0px;
+		text-align: justify;
+		text-justify: inter-word;
+	}      
+
+	.home-deskripsi2{
+		color : black;
+		margin-left: 2%;
+		margin-top: 10px;
+		text-align: left;
+		width: 38%;
+		height: 180px;
+		font-size: 11.5px;
+		letter-spacing: 0.05em;
+		border-right: solid 1px #e0e0d1;
+		text-align: justify;
+		text-justify: inter-word;
+	}
+
+	.home-deskripsi3{
+		color : black;
+		margin-left: 4% ;
+		margin-top: 10px;
+		text-align: left;
+		width: 38%;
+		height: 180px;
+		font-size: 11.5px;
+		letter-spacing: 0.05em;
+		text-align: justify;
+		text-justify: inter-word;
+	}
+}
+
+@media screen and (max-width: 960px){
+	.halo-title{
+		color : black;
+		font-size: 35px;
+		width: 60%;
+		margin-bottom: 15px;
+		margin-top: 15px;
+		margin-left: 7%;
+		text-align: left;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-family: 'sailecbold', sans-serif;
+		text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+	}
+	
+	.isi-desk {
+		min-width: 260px;
+		overflow: visible;
+		overflow-x: visible;
+		margin-top: 100px;
+	    background-color: none;
+		width: 140%;
+		margin-left: 0%;
+		margin-top: 130px;
+	}
+
+	.slidingVertical h3{
+	   animation: leftToRight 15s linear infinite 0s;
+	   -ms-animation: leftToRight 15s linear infinite 0s;
+	   -webkit-animation: leftToRight 15s linear infinite 0s;
+	   color: #111;
+	   text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+	   opacity: 0;
+	   font-size:3rem;
+	   overflow: hidden;
+	   position: absolute;
+	   color: red;
+	   width: 435px;
+	}
+
+	.home-deskripsi1{
+		color : black;
+		width: 90%;
+		height: 130px;
+		margin-left: 2% ;
+		text-align: left;
+		font-size: 11.5px;
+		letter-spacing: 0.05em;
+		border-bottom: 0px;
+		border-right: 0px;
+		text-align: justify;
+		text-justify: inter-word;
+	}      
+
+	.home-deskripsi2{
+		color : black;
+		margin-left: 2% ;
+		padding-top: 30px;
+		padding-right: 0px;
+		margin-top: 20px;
+		text-align: left;
+		width: 90%;
+		height: 220px;
+		font-size: 11.5px;
+		letter-spacing: 0.05em;
+		border-bottom: solid 1px #e0e0d1;
+		border-top: solid 1px #e0e0d1;
+		border-right: 0px;
+		text-align: justify;
+		text-justify: inter-word;
+	}
+
+	.home-deskripsi3{
+		color : black;
+		padding-right: 0px;
+		margin-left: 2%;	
+		text-align: left;
+		width: 90%;
+		height: 150px;
+		font-size: 11.5px;
+		letter-spacing: 0.05em;
+		text-align: justify;
+		text-justify: inter-word;
+	}
+}
+
+/*Untuk Galaxy S5*/
+@media screen and (max-width: 360px) {
+	.isi-desk {
+		min-width: 260px;
+		min-height: 300px
+		max-height: 550px;
+		overflow: visible;
+		overflow-x: visible;
+		margin-top: 100px;
+	    background-color: none;
+		width: 260px;
+		margin-left: 0%;
+		margin-top: 130px;
+	}
+
+	.slidingVertical h3{
+	   animation: leftToRight 15s linear infinite 0s;
+	   -ms-animation: leftToRight 15s linear infinite 0s;
+	   -webkit-animation: leftToRight 15s linear infinite 0s;
+	   color: #111;
+	   text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+	   opacity: 0;
+	   font-size:3rem;
+	   margin-left: -100px;
+	   overflow: hidden;
+	   position: absolute;
+	   color: red;
+	   width: 235px;
+	}
+}
+
+/* Untuk Iphone 6/7/8 */
+@media screen and (min-width: 321px) and (max-width: 426px) /*and (min-height: 569px) and (max-height: 668px)*/{
+	.isi-desk {
+		min-width: 275px;
+		min-height: 300px
+		max-height: 550px;
+		overflow: visible;
+		overflow-x: visible;
+		margin-top: 100px;
+	    background-color: none;
+		width: 275px;
+		margin-left: 0%;
+		margin-top: 130px;
+	}
+
+	.slidingVertical h3{
+	   animation: leftToRight 15s linear infinite 0s;
+	   -ms-animation: leftToRight 15s linear infinite 0s;
+	   -webkit-animation: leftToRight 15s linear infinite 0s;
+	   color: #111;
+	   text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+	   opacity: 0;
+	   font-size: 3rem;
+	   margin-left: -100px;
+	   overflow: hidden;
+	   position: absolute;
+	   color: red;
+	   width: 235px;
+	}
+}
+
+/* Untuk Responsif diatas 426 */
+@media screen and (max-width: 510px) /*and (min-height: 569px) and (max-height: 668px)*/{
+	.halo-title{
+		color : black;
+		font-size: 35px;
+		width: 60%;
+		margin-bottom: 15px;
+		margin-top: 15px;
+		margin-left: 100px;
+		text-align: left;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-family: 'sailecbold', sans-serif;
+		text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+	}
+
+	.isi-desk {
+		min-width: 275px;
+		min-height: 300px
+		max-height: 550px;
+		overflow: visible;
+		overflow-x: visible;
+		margin-top: 100px;
+	    background-color: none;
+		width: 275px;
+		margin-left: 0%;
+		margin-top: 130px;
+	}
+
+	.slidingVertical h3{
+	   animation: leftToRight 15s linear infinite 0s;
+	   -ms-animation: leftToRight 15s linear infinite 0s;
+	   -webkit-animation: leftToRight 15s linear infinite 0s;
+	   color: #111;
+	   text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+	   opacity: 0;
+	   font-size: 3rem;
+	   margin-left: -100px;
+	   overflow: hidden;
+	   position: absolute;
+	   color: red;
+	   width: 235px;
+	}
+
+	.home-deskripsi1{
+		color : black;
+		width: 90%;
+		height: 200px;
+		margin-left: 2%;
+		text-align: left;
+		font-size: 10px;
+		letter-spacing: 0.05em;
+		border-bottom: 0px;
+		border-right: 0px;
+		text-align: justify;
+		text-justify: inter-word;
+	}      
+
+	.home-deskripsi2{
+		color : black;
+		margin-left: 2%;
+		padding-top: 30px;
+		padding-right: 0px;
+		margin-top: 20px;
+		text-align: left;
+		width: 90%;
+		height: 250px;
+		font-size: 10px;
+		letter-spacing: 0.05em;
+		border-bottom: solid 1px #e0e0d1;
+		border-top: solid 1px #e0e0d1;
+		border-right: 0px;
+		text-align: justify;
+		text-justify: inter-word;
+	}
+
+	.home-deskripsi3{
+		color : black;
+		margin-left: 2%;
+		padding-right: 0px;	
+		text-align: left;
+		width: 90%;
+		height: 200px;
+		font-size: 10px;
+		letter-spacing: 0.05em;
+		text-align: justify;
+		text-justify: inter-word;
+	}
+}
+
+
+/*Untuk Iphone 5/SE*/
+@media screen and (max-width: 320px) {
+	.isi-desk {
+		min-width: 240px;
+		min-height: 300px
+		max-height: 550px;
+		overflow: visible;
+		overflow-x: visible;
+		margin-top: 100px;
+	    background-color: none;
+		width: 240px;
+		margin-left: 0%;
+		margin-top: 130px;
+	}
+
+	.slidingVertical h3{
+	   animation: leftToRight 15s linear infinite 0s;
+	   -ms-animation: leftToRight 15s linear infinite 0s;
+	   -webkit-animation: leftToRight 15s linear infinite 0s;
+	   color: #111;
+	   text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+	   opacity: 0;
+	   font-size: 2.5rem;
+	   margin-left: -100px;
+	   overflow: hidden;
+	   position: absolute;
+	   color: red;
+	   width: 205px;
+	}
+
+	.home-deskripsi1{
+		color : black;
+		width: 90%;
+		height: 180px;
+		margin-left: 2%;
+		text-align: left;
+		font-size: 9px;
+		letter-spacing: 0.05em;
+		border-bottom: 0px;
+		border-right: 0px;
+		text-align: justify;
+		text-justify: inter-word;
+	}      
+
+	.home-deskripsi2{
+		color : black;
+		margin-left: 2% ;
+		padding-top: 30px;
+		padding-right: 0px;
+		margin-top: 20px;
+		text-align: left;
+		width: 90%;
+		height: 250px;
+		font-size: 9px;
+		letter-spacing: 0.05em;
+		border-bottom: solid 1px #e0e0d1;
+		border-top: solid 1px #e0e0d1;
+		border-right: 0px;
+		text-align: justify;
+		text-justify: inter-word;
+	}
+
+	.home-deskripsi3{
+		color : black;
+		margin-left: 2%;
+		padding-right: 0px;
+		text-align: left;
+		width: 90%;
+		height: 180px;
+		font-size: 9px;
+		letter-spacing: 0.05em;
+		text-align: justify;
+		text-justify: inter-word;
+	}
+}
